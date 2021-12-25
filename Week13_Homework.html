@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="HW1221.css">
+</head>
+<body>
+	<script>
+		var r= Math.floor((Math.random()*100)+1);
+		var min=1;
+		var max=100;
+		var t=1;
+
+		function showrange(){
+		var	number=document.getElementById('input').value;
+		
+		if(number==r){
+			alert("BOOM");
+		}
+		else if(number!=r){
+			if(number<r){
+				min=number;
+				t++;
+				output();
+			}
+			if(number>r){
+				max=number;
+				t++;
+				output();
+			} 
+		}
+		}
+		
+	function output(){
+		var range=document.createElement('div');
+		var text=document.createTextNode(min+"~"+max);
+		range.appendChild(text);
+		if(t%2==1){
+			range.setAttribute('class','border1');
+		}else{
+			range.setAttribute('class','border2');
+		}
+		document.getElementById("result").appendChild(range);
+	}
+	</script>
+	
+	<div id="wrapper">
+	<h1>Guessing Game</h1>
+	<form>
+		<p>Your Guess(1~100)</p>
+		<input type="text" id="input">
+		<div class="a">
+			<p><input type="botton" id="play" value="play" name="play" onclick="showrange()"></p>
+		</div>
+	</form>
+	<div id="result">
+			<div>Result</div>
+	</div>
+	</div>
+
+</body>
+</html>

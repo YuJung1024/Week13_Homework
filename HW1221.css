@@ -1,0 +1,49 @@
+body{
+	text-align: center;
+}
+p{
+	color: cornflowerblue;
+}
+.a{
+	opacity: 0.2;
+}
+.a:hover{
+	opacity: 1 ;
+}
+input[type="button"]{
+	background-color: lightseagreen;
+	border-radius: 6px;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+}
+input[type="text"]{
+	border-radius: 5px;
+	width: 200px;
+	height: 20px;
+}
+
+.border1{
+	border: 2px solid darkgray;
+	background-color: lightskyblue;
+	font-family: arial;
+	width: 270px;
+	height: 25px;
+}
+.border2{
+	border: 2px ridge lightgray;
+	background-color: azure;
+	font-family: helvetica;
+	width: 270px;
+	height: 25px;
+}
+#wrapper{
+	box-sizing: border-box;
+	border: 2px solid brown;
+	text-align: center;
+	width: 300px;
+	background-color: aliceblue;
+	margin: 0 auto;
+	padding: 0px 10px;
+	color: brown;
+}
