@@ -20,12 +20,12 @@
 			alert("BOOM");
 		}
 		else if(number!=r){
-			if(number<r){
+			if(number<r && number>min){
 				min=number;
 				t++;
 				output();
 			}
-			if(number>r){
+			if(number>r && number <max){
 				max=number;
 				t++;
 				output();
